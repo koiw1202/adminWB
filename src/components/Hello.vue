@@ -14,7 +14,6 @@
 
       <h3>Dashboard</h3>
       <ul>
-        <li>헬로화면</li>
         <li>샘플화면</li>
         <li>Dashboard v1</li>
         <li>Dashboard v2</li>
