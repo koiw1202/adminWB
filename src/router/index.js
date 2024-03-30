@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from 'components/Hello.vue'
-import Sample from 'components/Sample.vue'
+import CarList from '../pages/CarList.vue'
+import OptionList from '../pages/OptionList.vue'
 
 Vue.use(Router)
 
@@ -9,14 +9,14 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+      path: '/carList',
+      name: 'CarList',
+      component: CarList
     },
     {
-      path: '/sample',
-      name: 'Sample',
-      component: Sample
+      path: '/optionList',
+      name: 'OptionList',
+      component: OptionList
     }
   ],
   linkActiveClass: 'active'
