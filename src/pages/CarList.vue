@@ -1,8 +1,6 @@
 <template>
   <!-- Info boxes -->
   <section class="content">
-
-    
     <!-- Main row -->
     <row>
       <!-- TABLE: LATEST ORDERS -->
@@ -48,9 +46,12 @@
 </template>
 
 <script>
+import {api} from '../vuex/actions'
+
 export default {
   name: 'sample',
   created () {
+    console.log(api('GET', 'https://api.sampleapis.com/wines/reds', null))
   },
   data () {
     return {
